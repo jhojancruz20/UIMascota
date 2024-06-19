@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="189.0" layoutY="23.0" prefHeight="38.0" prefWidth="320.0" text="Registro Mascotas" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Bell MT Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="92.0" text="Nombre: ">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="130.0" text="Especie: " />
+      <Label layoutX="53.0" layoutY="168.0" text="Edad: " />
+      <Label layoutX="53.0" layoutY="208.0" text="Raza: " />
+      <TextField fx:id="lblNombre" layoutX="115.0" layoutY="88.0" onAction="#inAgregarNombre" prefHeight="25.0" prefWidth="340.0" />
+      <TextField fx:id="lblEspecie" layoutX="115.0" layoutY="126.0" onAction="#inAgregarEspecie" prefWidth="340.0" />
+      <TextField fx:id="lblEdad" layoutX="115.0" layoutY="164.0" onAction="#inAgregarEdad" prefWidth="340.0" />
+      <TextField fx:id="lblRaza" layoutX="115.0" layoutY="202.0" onAction="#inAgregarRaza" prefWidth="340.0" />
+      <Label layoutX="55.0" layoutY="258.0" text="Resultados">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txfResultados" layoutX="60.0" layoutY="290.0" prefHeight="150.0" prefWidth="340.0" />
+      <Separator layoutX="2.0" layoutY="240.0" prefHeight="10.0" prefWidth="624.0" />
+      <Button fx:id="btnAgregar" contentDisplay="BOTTOM" layoutX="64.0" layoutY="498.0" mnemonicParsing="false" onAction="#inAgregarMascotas" prefHeight="45.0" prefWidth="98.0" text="Agregar" />
+      <Button fx:id="btnMostar" contentDisplay="BOTTOM" layoutX="212.0" layoutY="498.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#inMostrarMascotas" prefHeight="45.0" prefWidth="98.0" text="Mostrar" />
+      <Button fx:id="btnSalir" layoutX="545.0" layoutY="543.0" mnemonicParsing="false" onAction="#inSalirFormulario" prefHeight="38.0" prefWidth="58.0" text="Salir">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Button>
+      <Separator layoutX="-6.0" layoutY="452.0" prefHeight="10.0" prefWidth="632.0" />
+   </children>
+</Pane>
